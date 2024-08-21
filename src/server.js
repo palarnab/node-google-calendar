@@ -10,6 +10,14 @@ const port = process.env.PORT || 3000;
 
 let savedTokens = undefined;
 
+// {
+//   access_token: '',
+//   scope: 'https://www.googleapis.com/auth/calendar',
+//   token_type: 'Bearer',
+//   expiry_date: 1724166619694,
+//   refresh_token: ''
+// };
+
 const scopes = [
     'https://www.googleapis.com/auth/calendar',
     // 'https://www.googleapis.com/auth/calendar.events',
