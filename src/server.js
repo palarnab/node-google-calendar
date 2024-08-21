@@ -8,13 +8,7 @@ const app = express();
 
 const port = process.env.PORT || 3000;
 
-let savedTokens = {
-  access_token: 'ya29.a0AcM612w_fjfo6xaOQhbz9oph850ORrtPCdEaCeTvyLzWwDLEmQAwjHXu9vrk4FyBN1lUOhMvkc3SOt6X1qySddPhDsNWPI3WR8XNpls8te4GyBiuXnk5sFTGe_TGqjCU-yARo5tT_67N-RbtLCcJ5BFr-zEeee2ylAEQBlmcaCgYKAaESARISFQHGX2MiOYxKpjBpDg14wCTSHs-d8Q0175',
-  scope: 'https://www.googleapis.com/auth/calendar',
-  token_type: 'Bearer',
-  expiry_date: 1724166619694,
-  refresh_token: '1//0g-0W4G0nfcwNCgYIARAAGBASNwF-L9IrZ5W1AwlB0yTXNIs3LHfPOFVLpLOEyp0Qsci-z3YiBHZu7uDOg-s_5SrvY3YDAs9VKhk'
-};
+let savedTokens = undefined;
 
 const scopes = [
     'https://www.googleapis.com/auth/calendar',
